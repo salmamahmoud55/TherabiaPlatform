@@ -1,0 +1,6 @@
+@therabia_HostAddress = http://localhost:5206
+
+GET {{therabia_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
