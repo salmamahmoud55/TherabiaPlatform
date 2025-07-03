@@ -1,7 +1,3 @@
-
-using System.Text.Json.Serialization;
-using therabia.Data;
-
 namespace therabia
 {
     public class Program
@@ -13,6 +9,8 @@ namespace therabia
             // Add services to the container.
             var connectionString = builder.Configuration.GetConnectionString(name: "DefaultConnection") ?? throw new InvalidOperationException(message: "No Connection String Was Found");
             builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
+
+            builder.Services.AddScoped<IEmailService, EmailService>();
 
             
 
@@ -29,6 +27,24 @@ namespace therabia
     });
 
 
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        var key = Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]);
+
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidIssuer = builder.Configuration["JWT:Issuer"],
+            ValidAudience = builder.Configuration["JWT:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(key)
+        };
+    });
+
+            
+            
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -40,6 +56,7 @@ namespace therabia
 
             app.UseHttpsRedirection();
 
+            app.UseAuthorization();
             app.UseAuthorization();
 
 

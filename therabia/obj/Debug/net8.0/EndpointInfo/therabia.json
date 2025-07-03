@@ -36,19 +36,12 @@
         }
       }
     },
-    "/api/Accounts/confirmemail": {
+    "/api/Accounts/ConfirmEmail": {
       "get": {
         "tags": [
           "Accounts"
         ],
         "parameters": [
-          {
-            "name": "token",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
           {
             "name": "userId",
             "in": "query",
@@ -56,7 +49,57 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "token",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Accounts/login": {
+      "post": {
+        "tags": [
+          "Accounts"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Accounts/logout": {
+      "post": {
+        "tags": [
+          "Accounts"
         ],
         "responses": {
           "200": {
@@ -656,6 +699,20 @@
             "nullable": true
           },
           "linkedInLink": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginDTO": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
             "type": "string",
             "nullable": true
           }

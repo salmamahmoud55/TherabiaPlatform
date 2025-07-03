@@ -591,7 +591,6 @@ namespace therabia.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Password_hash")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("Phone")
@@ -602,6 +601,9 @@ namespace therabia.Migrations
 
                     b.Property<int>("Role")
                         .HasColumnType("int");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -615,9 +617,6 @@ namespace therabia.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
 
                     b.Property<DateTime>("ExpiryDate")
                         .HasColumnType("datetime2");

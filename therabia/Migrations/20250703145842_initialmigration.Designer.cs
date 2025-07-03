@@ -12,8 +12,8 @@ using therabia.Data;
 namespace therabia.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250623103942_SeedPlans")]
-    partial class SeedPlans
+    [Migration("20250703145842_initialmigration")]
+    partial class initialmigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -377,7 +377,16 @@ namespace therabia.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("bit");
+
                     b.Property<int>("PatientId")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<int?>("ProfessionalId")
                         .HasColumnType("int");
 
                     b.Property<int>("ProfessionalType")
@@ -386,12 +395,18 @@ namespace therabia.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
+                    b.Property<string>("TransactionImage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("PatientId");
+
+                    b.HasIndex("ProfessionalId");
 
                     b.HasIndex("UserId");
 
@@ -462,6 +477,42 @@ namespace therabia.Migrations
                     b.ToTable("Sessions");
                 });
 
+            modelBuilder.Entity("therabia.Models.SubscriptionChangeRequest", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("ProfessionalId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("RequestDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SubscriptionPlanId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TransactionImage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProfessionalId");
+
+                    b.HasIndex("SubscriptionPlanId");
+
+                    b.ToTable("SubscriptionChangeRequests");
+                });
+
             modelBuilder.Entity("therabia.Models.Subscriptionplan", b =>
                 {
                     b.Property<int>("Id")
@@ -522,11 +573,10 @@ namespace therabia.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Age")
+                    b.Property<int?>("Age")
                         .HasColumnType("int");
 
                     b.Property<string>("City")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
@@ -538,25 +588,25 @@ namespace therabia.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Gender")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("Is_Verified")
                         .HasColumnType("bit");
 
                     b.Property<string>("Password_hash")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Phone")
+                    b.Property<int?>("Phone")
                         .HasColumnType("int");
 
                     b.Property<string>("ProfileImage")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Role")
                         .HasColumnType("int");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -571,18 +621,15 @@ namespace therabia.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("expiry_date")
+                    b.Property<DateTime>("ExpiryDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<bool>("is_used")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("token")
+                    b.Property<string>("Token")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -768,6 +815,10 @@ namespace therabia.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("therabia.Models.Professional", "Professional")
+                        .WithMany("Professionalrequests")
+                        .HasForeignKey("ProfessionalId");
+
                     b.HasOne("therabia.Models.User", "User")
                         .WithMany("Professionalrequests")
                         .HasForeignKey("UserId")
@@ -775,6 +826,8 @@ namespace therabia.Migrations
                         .IsRequired();
 
                     b.Navigation("Patient");
+
+                    b.Navigation("Professional");
 
                     b.Navigation("User");
                 });
@@ -815,6 +868,25 @@ namespace therabia.Migrations
                     b.Navigation("User");
 
                     b.Navigation("profissional");
+                });
+
+            modelBuilder.Entity("therabia.Models.SubscriptionChangeRequest", b =>
+                {
+                    b.HasOne("therabia.Models.Professional", "Professional")
+                        .WithMany("SubscriptionChangeRequests")
+                        .HasForeignKey("ProfessionalId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("therabia.Models.Subscriptionplan", "SubscriptionPlan")
+                        .WithMany("SubscriptionChangeRequests")
+                        .HasForeignKey("SubscriptionPlanId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Professional");
+
+                    b.Navigation("SubscriptionPlan");
                 });
 
             modelBuilder.Entity("therabia.Models.Verificationtoken", b =>
@@ -861,9 +933,13 @@ namespace therabia.Migrations
 
                     b.Navigation("Patients");
 
+                    b.Navigation("Professionalrequests");
+
                     b.Navigation("Rates");
 
                     b.Navigation("Sessions");
+
+                    b.Navigation("SubscriptionChangeRequests");
 
                     b.Navigation("WorkingDays");
                 });
@@ -873,6 +949,8 @@ namespace therabia.Migrations
                     b.Navigation("Payments");
 
                     b.Navigation("Profissionals");
+
+                    b.Navigation("SubscriptionChangeRequests");
                 });
 
             modelBuilder.Entity("therabia.Models.User", b =>

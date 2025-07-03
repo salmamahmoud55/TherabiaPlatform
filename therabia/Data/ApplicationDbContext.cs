@@ -214,13 +214,13 @@ namespace therabia.Data
         public DbSet<Payment> Payments { get; set; }
        
         public DbSet<Admin> Admins { get; set; }
-        public DbSet<Verificationtoken> Verificationtokens { get; set; }
+        
         public DbSet<Professionalrequest> Professionalrequests { get; set; }
         public DbSet<Session> Sessions { get; set; }
         public DbSet<Subscriptionplan> subscriptionplans { get; set; }
         public DbSet<WorkingDay> WorkingDays { get; set; }
+        public DbSet<Verificationtoken> Verificationtokens { get; set; }
 
-       
         public DbSet<ProfessionalPatient> ProfessionalPatients { get; set; }
 
         public DbSet<AvailableTime> AvailableTimes { get; set; }

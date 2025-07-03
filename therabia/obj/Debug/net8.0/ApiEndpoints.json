@@ -2,22 +2,48 @@
   {
     "ContainingType": "therabia.Controllers.AccountsController",
     "Method": "ConfirmEmail",
-    "RelativePath": "api/Accounts/confirmemail",
+    "RelativePath": "api/Accounts/ConfirmEmail",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "token",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
         "Name": "userId",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "therabia.Controllers.AccountsController",
+    "Method": "Login",
+    "RelativePath": "api/Accounts/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "therabia.DTO.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "therabia.Controllers.AccountsController",
+    "Method": "Logout",
+    "RelativePath": "api/Accounts/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

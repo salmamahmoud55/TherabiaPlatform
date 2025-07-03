@@ -14,10 +14,11 @@ namespace therabia.Models
         public int Id { get; set; }
         public string? ProfileImage { get; set; }
         public string FullName { get; set; }
+        public string? UserName { get; set; }
         public string? City { get; set; }
         public string? Gender { get; set; } = string.Empty;
         public string Email { get; set; }
-        public string Password_hash { get; set; }
+        public string? Password_hash { get; set; }
         public int? Age { get; set; } = 0;
         public int? Phone { get; set; } 
         public bool Is_Verified { get; set; }
