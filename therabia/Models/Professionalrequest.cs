@@ -20,6 +20,9 @@
         public ProfessionalType ProfessionalType { get; set; }
         public RequestStatus Status { get; set; }       
         public DateTime CreatedAt { get; set; }
+        public string TransactionImage { get; set; }
+        public bool IsApproved { get; set; }
+        public double Price { get; set; }
 
 
         public int UserId { get; set; }
@@ -27,5 +30,9 @@
 
         public int PatientId { get; set; }
         public Patient Patient { get; set; }
+
+        public int? ProfessionalId { get; set; }
+        public Professional Professional { get; set; }
+
     }
 }

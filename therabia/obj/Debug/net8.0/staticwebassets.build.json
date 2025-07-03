@@ -1,12 +1,125 @@
 {
   "Version": 1,
-  "Hash": "XCaPySbRJ2QrvozI6dAxhM9Wcv9cgHNF8iG5T1ugCI4=",
+  "Hash": "X0SlqPqzNyI8qkY4qUCTofEJIwyNLFSIDFg63Z+7a9k=",
   "Source": "therabia",
   "BasePath": "_content/therabia",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "therabia\\wwwroot",
+      "Source": "therabia",
+      "ContentRoot": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\wwwroot\\",
+      "BasePath": "_content/therabia",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\wwwroot\\images\\transactions\\063ab5be-becd-4f42-89c5-6e1a2d8ceb10.PNG",
+      "SourceId": "therabia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\wwwroot\\",
+      "BasePath": "_content/therabia",
+      "RelativePath": "images/transactions/063ab5be-becd-4f42-89c5-6e1a2d8ceb10#[.{fingerprint}]?.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6rnolghsdj",
+      "Integrity": "QhMe133zkoRraUmJZSe3FSNHxRKXnXdRYbguKiiO32Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\transactions\\063ab5be-becd-4f42-89c5-6e1a2d8ceb10.PNG"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/transactions/063ab5be-becd-4f42-89c5-6e1a2d8ceb10.6rnolghsdj.PNG",
+      "AssetFile": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\wwwroot\\images\\transactions\\063ab5be-becd-4f42-89c5-6e1a2d8ceb10.PNG",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "262752"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QhMe133zkoRraUmJZSe3FSNHxRKXnXdRYbguKiiO32Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 26 Jun 2025 16:42:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6rnolghsdj"
+        },
+        {
+          "Name": "label",
+          "Value": "images/transactions/063ab5be-becd-4f42-89c5-6e1a2d8ceb10.PNG"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QhMe133zkoRraUmJZSe3FSNHxRKXnXdRYbguKiiO32Q="
+        }
+      ]
+    },
+    {
+      "Route": "images/transactions/063ab5be-becd-4f42-89c5-6e1a2d8ceb10.PNG",
+      "AssetFile": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\wwwroot\\images\\transactions\\063ab5be-becd-4f42-89c5-6e1a2d8ceb10.PNG",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "262752"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QhMe133zkoRraUmJZSe3FSNHxRKXnXdRYbguKiiO32Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 26 Jun 2025 16:42:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QhMe133zkoRraUmJZSe3FSNHxRKXnXdRYbguKiiO32Q="
+        }
+      ]
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 ﻿namespace therabia.Models
 {
-    public enum SubscriptionplanTitle
+    public enum PlanType
     {
         Free,
         Silver,
@@ -10,16 +10,17 @@
     public class Subscriptionplan
     {
         public int Id { get; set; }
-        public SubscriptionplanTitle Title { get; set; }
+        public PlanType Type { get; set; }
         public decimal Price { get; set; }
         public int MaxPatients { get; set; }
 
-        public ICollection<Doctor> Doctors { get; set; }
-        public ICollection<Trainer> Trainers { get; set; }
-        public ICollection<Nutritionist> Nutritionists { get; set; }
+        public ICollection<Professional> Profissionals { get; set; }
+        
 
 
         public ICollection<Payment> Payments { get; set; }
+
+        public ICollection<SubscriptionChangeRequest> SubscriptionChangeRequests { get; set; }
 
     }
 }

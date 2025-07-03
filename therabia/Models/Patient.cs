@@ -18,14 +18,15 @@
         public int UserId { get; set; }
         public User User { get; set; }
 
-        public ICollection<Doctor> Doctors { get; set; }
-        public ICollection<Trainer> Trainers { get; set; }
-        public ICollection<Nutritionist> Nutritionists { get; set; }
-
         public ICollection<Professionalrequest> Professionalrequests { get; set; }
         public ICollection<Patientreport> Patientreports { get; set; }
 
         public ICollection<Session> Sessions { get; set; }
+
+        public List<ProfessionalPatient> Professionals { get; set; } = new();
+
+        public List<Message> Messages { get; set; } = new();
+
 
 
     }

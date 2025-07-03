@@ -11,24 +11,24 @@ namespace therabia.Models
     }
     public class User
     {
-        public int Id { get; set; } 
-        public string firstname { get; set; }       
-        public string lastname { get; set; }     
-        public string Gender { get; set; } = string.Empty;
+        public int Id { get; set; }
+        public string? ProfileImage { get; set; }
+        public string FullName { get; set; }
+        public string? City { get; set; }
+        public string? Gender { get; set; } = string.Empty;
         public string Email { get; set; }
         public string Password_hash { get; set; }
-        public int Age { get; set; } = 0;
-        public int Phone { get; set; } 
+        public int? Age { get; set; } = 0;
+        public int? Phone { get; set; } 
         public bool Is_Verified { get; set; }
-        public string ProfileImageUrl { get; set; } = string.Empty;
+        
         public UserRole Role { get; set; }
 
 
-        public Doctor Doctor { get; set; }
+        public Professional Profissional { get; set; }
         public Patient Patient { get; set; }
         public Admin Admin { get; set; }
-        public Trainer Trainer { get; set; }
-        public Nutritionist Nutritionist { get; set; }
+        
 
         public ICollection<Message> Messages { get; set; }
         public ICollection<Verificationtoken> Verificationtokens { get; set; }

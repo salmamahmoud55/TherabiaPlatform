@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\wwwroot\\images\\transactions\\063ab5be-becd-4f42-89c5-6e1a2d8ceb10.PNG",
+      "PackagePath": "staticwebassets\\images\\transactions\\063ab5be-becd-4f42-89c5-6e1a2d8ceb10.PNG"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.therabia.props",
+      "PackagePath": "build\\therabia.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.therabia.props",
+      "PackagePath": "buildMultiTargeting\\therabia.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.therabia.props",
+      "PackagePath": "buildTransitive\\therabia.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.therabia.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.therabia.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

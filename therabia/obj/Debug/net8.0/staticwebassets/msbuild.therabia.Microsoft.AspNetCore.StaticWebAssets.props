@@ -1,0 +1,22 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\transactions\063ab5be-becd-4f42-89c5-6e1a2d8ceb10.PNG'))">
+      <SourceType>Package</SourceType>
+      <SourceId>therabia</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/therabia</BasePath>
+      <RelativePath>images/transactions/063ab5be-becd-4f42-89c5-6e1a2d8ceb10.PNG</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>6rnolghsdj</Fingerprint>
+      <Integrity>QhMe133zkoRraUmJZSe3FSNHxRKXnXdRYbguKiiO32Q=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\transactions\063ab5be-becd-4f42-89c5-6e1a2d8ceb10.PNG'))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>

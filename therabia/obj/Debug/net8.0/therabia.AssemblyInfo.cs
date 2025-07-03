@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("therabia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f028abf46031854586dbef58a24985ea18931a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("therabia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("therabia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

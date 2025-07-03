@@ -9,7 +9,11 @@
     {
         [Key]
         public int SessioId { get; set; }       
-        public SessionType SessionType { get; set; }
+        public SessionType Type { get; set; }
+        public int? Rate { get; set; }
+        public int Minutes { get; set; }
+        public DateTime SessionDate { get; set; }
+        public double Price { get; set; }
 
 
         public int UserId { get; set; }
@@ -18,7 +22,10 @@
         public int PatientId { get; set; }
         public Patient Patient { get; set; }
 
+        public int ProfessionalId { get; set; }  
+        public Professional profissional { get; set; }
 
+        
 
     }
 }

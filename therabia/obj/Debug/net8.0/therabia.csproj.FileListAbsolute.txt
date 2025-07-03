@@ -170,3 +170,11 @@ C:\Users\Salma Mahmoud\source\repos\therabia\therabia\obj\Debug\net8.0\refint\th
 C:\Users\Salma Mahmoud\source\repos\therabia\therabia\obj\Debug\net8.0\therabia.pdb
 C:\Users\Salma Mahmoud\source\repos\therabia\therabia\obj\Debug\net8.0\therabia.genruntimeconfig.cache
 C:\Users\Salma Mahmoud\source\repos\therabia\therabia\obj\Debug\net8.0\ref\therabia.dll
+C:\Users\Salma Mahmoud\source\repos\therabia\therabia\obj\Debug\net8.0\therabia.sourcelink.json
+C:\Users\Salma Mahmoud\source\repos\therabia\therabia\bin\Debug\net8.0\therabia.staticwebassets.runtime.json
+C:\Users\Salma Mahmoud\source\repos\therabia\therabia\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\Salma Mahmoud\source\repos\therabia\therabia\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\Salma Mahmoud\source\repos\therabia\therabia\bin\Debug\net8.0\MailKit.dll
+C:\Users\Salma Mahmoud\source\repos\therabia\therabia\bin\Debug\net8.0\MimeKit.dll
+C:\Users\Salma Mahmoud\source\repos\therabia\therabia\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Salma Mahmoud\source\repos\therabia\therabia\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

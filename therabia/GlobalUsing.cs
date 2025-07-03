@@ -1,2 +1,13 @@
 ﻿global using Microsoft.EntityFrameworkCore;
 global using System.ComponentModel.DataAnnotations;
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.AspNetCore.Mvc;
+global using therabia.DTO;
+global using therabia.Data;
+global using therabia.Models;
+global using therabia.Helper;
+global using Microsoft.IdentityModel.Tokens;
+global using System.IdentityModel.Tokens.Jwt;
+global using System.Security.Claims;
+global using System.Text;
+global using BCrypt.Net;
