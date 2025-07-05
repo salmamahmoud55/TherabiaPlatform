@@ -154,6 +154,12 @@ namespace therabia.Data
      .HasForeignKey(r => r.ProfessionalId)
      .OnDelete(DeleteBehavior.NoAction);
 
+            modelBuilder.Entity<Rate>()
+     .HasOne(r => r.User)
+     .WithMany(p => p.Rates)
+     .HasForeignKey(r => r.UserId)
+     .OnDelete(DeleteBehavior.NoAction);
+
 
 
             modelBuilder.Entity<Message>()
@@ -227,6 +233,7 @@ namespace therabia.Data
         public DbSet<Discount> Discounts { get; set; }
         public DbSet<Rate> Rates { get; set; }
         public DbSet<SubscriptionChangeRequest> SubscriptionChangeRequests { get; set; }
+        public DbSet<ContactMessage> ContactMessages { get; set; }
 
 
 

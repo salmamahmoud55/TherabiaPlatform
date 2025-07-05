@@ -3,16 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|c:\\users\\salma mahmoud\\source\\repos\\therabia\\therabia\\models\\verificationtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|solutionrelative:therabia\\models\\verificationtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|c:\\users\\salma mahmoud\\source\\repos\\therabia\\therabia\\models\\professional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|solutionrelative:therabia\\models\\professional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|c:\\users\\salma mahmoud\\source\\repos\\therabia\\therabia\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|solutionrelative:therabia\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|c:\\users\\salma mahmoud\\source\\repos\\therabia\\therabia\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|solutionrelative:therabia\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|c:\\users\\salma mahmoud\\source\\repos\\therabia\\therabia\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|solutionrelative:therabia\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|c:\\users\\salma mahmoud\\source\\repos\\therabia\\therabia\\dto\\availabletimedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|solutionrelative:therabia\\dto\\availabletimedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|c:\\users\\salma mahmoud\\source\\repos\\therabia\\therabia\\dto\\professionaldetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|solutionrelative:therabia\\dto\\professionaldetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|c:\\users\\salma mahmoud\\source\\repos\\therabia\\therabia\\dto\\addratingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|solutionrelative:therabia\\dto\\addratingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|c:\\users\\salma mahmoud\\source\\repos\\therabia\\therabia\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|solutionrelative:therabia\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|c:\\users\\salma mahmoud\\source\\repos\\therabia\\therabia\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|solutionrelative:therabia\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|c:\\users\\salma mahmoud\\source\\repos\\therabia\\therabia\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|solutionrelative:therabia\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|c:\\users\\salma mahmoud\\source\\repos\\therabia\\therabia\\models\\rate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|solutionrelative:therabia\\models\\rate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|c:\\users\\salma mahmoud\\source\\repos\\therabia\\therabia\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|solutionrelative:therabia\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Migrations\\20250704224203_update1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:therabia\\Migrations\\20250704224203_update1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|c:\\users\\salma mahmoud\\source\\repos\\therabia\\therabia\\dto\\homeprofessionaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|solutionrelative:therabia\\dto\\homeprofessionaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|c:\\users\\salma mahmoud\\source\\repos\\therabia\\therabia\\dto\\contactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|solutionrelative:therabia\\dto\\contactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|c:\\users\\salma mahmoud\\source\\repos\\therabia\\therabia\\models\\contactmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|solutionrelative:therabia\\models\\contactmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|c:\\users\\salma mahmoud\\source\\repos\\therabia\\therabia\\models\\verificationtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|solutionrelative:therabia\\models\\verificationtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CC5EB27-17EE-43EF-9005-4454C1BA8BB7}|therabia\\therabia.csproj|c:\\users\\salma mahmoud\\source\\repos\\therabia\\therabia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,6 +83,202 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Professional.cs",
+              "DocumentMoniker": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Models\\Professional.cs",
+              "RelativeDocumentMoniker": "therabia\\Models\\Professional.cs",
+              "ToolTip": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Models\\Professional.cs",
+              "RelativeToolTip": "therabia\\Models\\Professional.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwCUAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T01:30:04.411Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "therabia\\Controllers\\AccountsController.cs",
+              "ToolTip": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "therabia\\Controllers\\AccountsController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAkwEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T14:21:29.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PatientController.cs",
+              "DocumentMoniker": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Controllers\\PatientController.cs",
+              "RelativeDocumentMoniker": "therabia\\Controllers\\PatientController.cs",
+              "ToolTip": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Controllers\\PatientController.cs",
+              "RelativeToolTip": "therabia\\Controllers\\PatientController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAwFYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T23:24:05.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "therabia\\Models\\Patient.cs",
+              "ToolTip": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Models\\Patient.cs",
+              "RelativeToolTip": "therabia\\Models\\Patient.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAswBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T23:20:57.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AvailableTimeDto.cs",
+              "DocumentMoniker": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\DTO\\AvailableTimeDto.cs",
+              "RelativeDocumentMoniker": "therabia\\DTO\\AvailableTimeDto.cs",
+              "ToolTip": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\DTO\\AvailableTimeDto.cs",
+              "RelativeToolTip": "therabia\\DTO\\AvailableTimeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T23:29:02.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProfessionalDetailsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\DTO\\ProfessionalDetailsDTO.cs",
+              "RelativeDocumentMoniker": "therabia\\DTO\\ProfessionalDetailsDTO.cs",
+              "ToolTip": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\DTO\\ProfessionalDetailsDTO.cs",
+              "RelativeToolTip": "therabia\\DTO\\ProfessionalDetailsDTO.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAYwBMAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T23:16:52.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddRatingDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\DTO\\AddRatingDTO.cs",
+              "RelativeDocumentMoniker": "therabia\\DTO\\AddRatingDTO.cs",
+              "ToolTip": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\DTO\\AddRatingDTO.cs",
+              "RelativeToolTip": "therabia\\DTO\\AddRatingDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T23:16:02.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Models\\User.cs",
+              "RelativeDocumentMoniker": "therabia\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Models\\User.cs",
+              "RelativeToolTip": "therabia\\Models\\User.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA6wCoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T23:13:25.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Rate.cs",
+              "DocumentMoniker": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Models\\Rate.cs",
+              "RelativeDocumentMoniker": "therabia\\Models\\Rate.cs",
+              "ToolTip": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Models\\Rate.cs",
+              "RelativeToolTip": "therabia\\Models\\Rate.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T23:10:19.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20250704224203_update1.cs",
+              "DocumentMoniker": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Migrations\\20250704224203_update1.cs",
+              "RelativeDocumentMoniker": "therabia\\Migrations\\20250704224203_update1.cs",
+              "ToolTip": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Migrations\\20250704224203_update1.cs",
+              "RelativeToolTip": "therabia\\Migrations\\20250704224203_update1.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T22:42:03.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ContactDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\DTO\\ContactDTO.cs",
+              "RelativeDocumentMoniker": "therabia\\DTO\\ContactDTO.cs",
+              "ToolTip": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\DTO\\ContactDTO.cs",
+              "RelativeToolTip": "therabia\\DTO\\ContactDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T22:38:46.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "therabia\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "therabia\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T22:27:12.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "therabia\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "therabia\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAAAgwKAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T14:53:09.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ContactMessage.cs",
+              "DocumentMoniker": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Models\\ContactMessage.cs",
+              "RelativeDocumentMoniker": "therabia\\Models\\ContactMessage.cs",
+              "ToolTip": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Models\\ContactMessage.cs",
+              "RelativeToolTip": "therabia\\Models\\ContactMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T22:37:55.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeProfessionalDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\DTO\\HomeProfessionalDTO.cs",
+              "RelativeDocumentMoniker": "therabia\\DTO\\HomeProfessionalDTO.cs",
+              "ToolTip": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\DTO\\HomeProfessionalDTO.cs",
+              "RelativeToolTip": "therabia\\DTO\\HomeProfessionalDTO.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T22:26:12.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Verificationtoken.cs",
               "DocumentMoniker": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Models\\Verificationtoken.cs",
               "RelativeDocumentMoniker": "therabia\\Models\\Verificationtoken.cs",
@@ -43,20 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "therabia\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "therabia\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAANEAAAAAAAAAAAAIwN0AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T14:53:09.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 16,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Program.cs",
               "RelativeDocumentMoniker": "therabia\\Program.cs",
@@ -64,21 +299,7 @@
               "RelativeToolTip": "therabia\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T14:22:01.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountsController.cs",
-              "DocumentMoniker": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Controllers\\AccountsController.cs",
-              "RelativeDocumentMoniker": "therabia\\Controllers\\AccountsController.cs",
-              "ToolTip": "C:\\Users\\Salma Mahmoud\\source\\repos\\therabia\\therabia\\Controllers\\AccountsController.cs",
-              "RelativeToolTip": "therabia\\Controllers\\AccountsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T14:21:29.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T14:22:01.942Z"
             }
           ]
         }

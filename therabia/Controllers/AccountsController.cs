@@ -31,11 +31,63 @@ namespace therabia.Controllers
                 FullName = $"{dto.firstname} {dto.lastname}",
                 Email = dto.Email,
                 Password_hash = BCrypt.Net.BCrypt.HashPassword(dto.password),
-                Role = Enum.Parse<UserRole>(dto.role),
+                Role = Enum.Parse<UserRole>(dto.role, true),
                 Is_Verified = false
             };
 
             _context.Users.Add(user);
+            await _context.SaveChangesAsync();
+
+            // إنشاء Professional لو كان الدور دكتور أو مدرب أو أخصائي تغذية
+            if (user.Role == UserRole.Doctor || user.Role == UserRole.Trainer || user.Role == UserRole.Nutritionist)
+            {
+                var professional = new Professional
+                {
+                    UserId = user.Id,
+                    IsActive = true,
+                    Bio = string.Empty,
+                    Certificates = string.Empty,
+                    YearsOfExperience = 0,
+                    Specialization = string.Empty,
+                    Price = 0,
+                    AvailableTime = string.Empty,
+                    Code = "", 
+                    About = string.Empty,
+                    Faculty = string.Empty,
+                    Address = string.Empty,
+                    FacebookLink = string.Empty,
+                    LinkedInLink = string.Empty,
+                    SubscriptionplanId = 1
+                };
+
+                _context.Professionals.Add(professional);
+            }
+            else if (user.Role == UserRole.Patient)
+            {
+                var patient = new Patient
+                {
+                    UserId = user.Id,
+                    Height = 0,
+                    Weight = 0,
+                    Goals = "",
+                    SubscriptionStatus = "Pending",
+                    MedicalHistory = "",
+                    Allergies = "",
+
+                };
+
+                _context.Patients.Add(patient);
+            }
+            else if (user.Role == UserRole.Admin)
+            {
+                var admin = new Admin
+                {
+                    UserId = user.Id
+                };
+
+                _context.Admins.Add(admin);
+            }
+
             await _context.SaveChangesAsync();
 
             var token = new Verificationtoken
@@ -52,6 +104,8 @@ namespace therabia.Controllers
 
             return Ok("Account created successfully. Please confirm your email.");
         }
+
+
 
         [HttpGet("ConfirmEmail")]
         public async Task<IActionResult> ConfirmEmail(int userId, string token)

@@ -10,7 +10,7 @@
         public int YearsOfExperience { get; set; }
         public string Specialization { get; set; }
         public decimal Price { get; set; }
-        public string AvailableTime { get; set; }
+        public string? AvailableTime { get; set; }
         public bool IsActive { get; set; }
         public string Code { get; set; }
         public Discount? Discount { get; set; }

@@ -159,6 +159,64 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "therabia.Controllers.HomeController",
+    "Method": "GetHomeProfessionals",
+    "RelativePath": "api/Home",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "therabia.Controllers.HomeController",
+    "Method": "SendMessage",
+    "RelativePath": "api/Home/ContactUs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "therabia.DTO.ContactDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "therabia.Controllers.PatientController",
+    "Method": "GetProfessionalDetails",
+    "RelativePath": "api/Patient/professionals/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "therabia.Controllers.PatientController",
+    "Method": "AddRating",
+    "RelativePath": "api/Patient/professionals/rate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "therabia.DTO.AddRatingDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "therabia.Controllers.ProfessionalController",
     "Method": "GetProfessionalById",
     "RelativePath": "api/Professional/{id}",

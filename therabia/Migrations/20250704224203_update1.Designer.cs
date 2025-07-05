@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using therabia.Data;
 
@@ -11,9 +12,11 @@ using therabia.Data;
 namespace therabia.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250704224203_update1")]
+    partial class update1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -187,9 +190,6 @@ namespace therabia.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Allergies")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Assigned_Doctor_Id")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -209,9 +209,6 @@ namespace therabia.Migrations
                     b.Property<decimal>("Height")
                         .HasPrecision(5, 2)
                         .HasColumnType("decimal(5,2)");
-
-                    b.Property<string>("MedicalHistory")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SubscriptionStatus")
                         .IsRequired()
@@ -318,6 +315,7 @@ namespace therabia.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("AvailableTime")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Bio")
@@ -455,20 +453,7 @@ namespace therabia.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<bool>("Anonymous")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Comment")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
                     b.Property<int>("ProfessionalId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UserId")
                         .HasColumnType("int");
 
                     b.Property<int>("Value")
@@ -477,8 +462,6 @@ namespace therabia.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("ProfessionalId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Rates");
                 });
@@ -889,15 +872,7 @@ namespace therabia.Migrations
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("therabia.Models.User", "User")
-                        .WithMany("Rates")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
                     b.Navigation("Professional");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("therabia.Models.Session", b =>
@@ -1026,8 +1001,6 @@ namespace therabia.Migrations
 
                     b.Navigation("Profissional")
                         .IsRequired();
-
-                    b.Navigation("Rates");
 
                     b.Navigation("Sessions");
 

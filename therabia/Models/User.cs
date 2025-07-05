@@ -39,5 +39,7 @@ namespace therabia.Models
         public ICollection<Professionalrequest> Professionalrequests { get; set; }
 
         public ICollection<Session> Sessions { get; set; }
+
+        public ICollection<Rate> Rates { get; set; }
     }
 }

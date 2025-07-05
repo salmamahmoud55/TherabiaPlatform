@@ -14,6 +14,9 @@
         public decimal Weight { get; set; }
         public string Goals { get; set; }
         public string SubscriptionStatus { get; set; }
+        public string? MedicalHistory { get; set; } //أمراض مزمنة 
+        public string? Allergies { get; set; } //حساسية من أدوية أو أطعمة 
+
 
         public int UserId { get; set; }
         public User User { get; set; }
