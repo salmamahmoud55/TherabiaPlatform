@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using therabia.Data;
 
@@ -11,9 +12,11 @@ using therabia.Data;
 namespace therabia.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250711004335_update6")]
+    partial class update6
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -710,41 +713,6 @@ namespace therabia.Migrations
                     b.ToTable("Verificationtokens");
                 });
 
-            modelBuilder.Entity("therabia.Models.WalletRequest", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<decimal>("Cost")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("DiscountCode")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PatientId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SessionId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("TransactionImage")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PatientId")
-                        .IsUnique();
-
-                    b.HasIndex("SessionId")
-                        .IsUnique();
-
-                    b.ToTable("WalletRequests");
-                });
-
             modelBuilder.Entity("therabia.Models.WorkingDay", b =>
                 {
                     b.Property<int>("Id")
@@ -1038,25 +1006,6 @@ namespace therabia.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("therabia.Models.WalletRequest", b =>
-                {
-                    b.HasOne("therabia.Models.Patient", "Patient")
-                        .WithOne("WalletRequest")
-                        .HasForeignKey("therabia.Models.WalletRequest", "PatientId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("therabia.Models.Session", "Session")
-                        .WithOne("WalletRequest")
-                        .HasForeignKey("therabia.Models.WalletRequest", "SessionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Patient");
-
-                    b.Navigation("Session");
-                });
-
             modelBuilder.Entity("therabia.Models.WorkingDay", b =>
                 {
                     b.HasOne("therabia.Models.Professional", "Profissional")
@@ -1078,9 +1027,6 @@ namespace therabia.Migrations
                     b.Navigation("Professionals");
 
                     b.Navigation("Sessions");
-
-                    b.Navigation("WalletRequest")
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("therabia.Models.Professional", b =>
@@ -1106,9 +1052,6 @@ namespace therabia.Migrations
 
             modelBuilder.Entity("therabia.Models.Session", b =>
                 {
-                    b.Navigation("WalletRequest")
-                        .IsRequired();
-
                     b.Navigation("professionalrequest")
                         .IsRequired();
                 });

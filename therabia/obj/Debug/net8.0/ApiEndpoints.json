@@ -186,6 +186,59 @@
   },
   {
     "ContainingType": "therabia.Controllers.PatientController",
+    "Method": "GetPatientDashboard",
+    "RelativePath": "api/Patient/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "therabia.Controllers.PatientController",
+    "Method": "SubmitCalendarEntry",
+    "RelativePath": "api/Patient/{id}/my_records",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "therabia.DTO.PatientCalenderDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "therabia.Controllers.PatientController",
+    "Method": "GetPreviousSessions",
+    "RelativePath": "api/Patient/previoussessions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patientId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "therabia.Controllers.PatientController",
     "Method": "GetProfessionalDetails",
     "RelativePath": "api/Patient/professionals/{id}",
     "HttpMethod": "GET",
@@ -211,6 +264,54 @@
       {
         "Name": "dto",
         "Type": "therabia.DTO.AddRatingDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "therabia.Controllers.PatientController",
+    "Method": "GetMyRequests",
+    "RelativePath": "api/Patient/requests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patientId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "therabia.Controllers.PatientController",
+    "Method": "GetUpcomingSessions",
+    "RelativePath": "api/Patient/upcomingsessions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patientId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "therabia.Controllers.PatientController",
+    "Method": "CreateWalletRequest",
+    "RelativePath": "api/Patient/wallet",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "therabia.DTO.WalletRequestDTO",
         "IsRequired": true
       }
     ],

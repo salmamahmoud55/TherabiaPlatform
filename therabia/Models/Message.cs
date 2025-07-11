@@ -17,5 +17,15 @@
 
         public int UserId { get; set; }
         public User User { get; set; }
+
+        public int SenderId { get; set; }       // اللي بعت الرسالة (UserId)
+        public User Sender { get; set; }
+
+        public int ReceiverId { get; set; }     // اللي استلم الرسالة (UserId)
+        public User Receiver { get; set; }
+
+
+
+
     }
 }

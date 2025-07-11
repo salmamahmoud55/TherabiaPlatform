@@ -14,5 +14,6 @@
         public string? Meals { get; set; }
         public double? Water { get; set; }
         public string? Notes { get; set; }
+        public DateTime Date { get; set; }
     }
 }

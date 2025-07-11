@@ -135,6 +135,25 @@ namespace therabia.Data
                 .HasForeignKey(pp => pp.PatientId)
                 .OnDelete(DeleteBehavior.NoAction);
 
+            modelBuilder.Entity<Professionalrequest>()
+       .HasOne(pr => pr.Session)
+       .WithOne(s => s.professionalrequest)
+       .HasForeignKey<Professionalrequest>(pr => pr.SessionId)
+       .OnDelete(DeleteBehavior.SetNull);
+
+            modelBuilder.Entity<WalletRequest>()
+       .HasOne(pr => pr.Session)
+       .WithOne(s => s.WalletRequest)
+       .HasForeignKey<WalletRequest>(pr => pr.SessionId)
+       .OnDelete(DeleteBehavior.SetNull);
+
+            modelBuilder.Entity<WalletRequest>()
+       .HasOne(pr => pr.Patient)
+       .WithOne(s => s.WalletRequest)
+       .HasForeignKey<WalletRequest>(pr => pr.PatientId)
+       .OnDelete(DeleteBehavior.SetNull);
+
+
 
 
 
@@ -194,6 +213,18 @@ namespace therabia.Data
                 .HasForeignKey(r => r.SubscriptionPlanId)
                 .OnDelete(DeleteBehavior.NoAction);
 
+            modelBuilder.Entity<Message>()
+    .HasOne(m => m.Sender)
+    .WithMany()
+    .HasForeignKey(m => m.SenderId)
+    .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Message>()
+                .HasOne(m => m.Receiver)
+                .WithMany()
+                .HasForeignKey(m => m.ReceiverId)
+                .OnDelete(DeleteBehavior.NoAction);
+
 
 
 
@@ -234,6 +265,7 @@ namespace therabia.Data
         public DbSet<Rate> Rates { get; set; }
         public DbSet<SubscriptionChangeRequest> SubscriptionChangeRequests { get; set; }
         public DbSet<ContactMessage> ContactMessages { get; set; }
+        public DbSet<WalletRequest> WalletRequests { get; set; }
 
 
 

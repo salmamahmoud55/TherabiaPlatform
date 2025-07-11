@@ -25,7 +25,10 @@
         public int ProfessionalId { get; set; }  
         public Professional profissional { get; set; }
 
-        
+        public Professionalrequest professionalrequest { get; set; }
+        public WalletRequest WalletRequest { get; set; }
+
+
 
     }
 }

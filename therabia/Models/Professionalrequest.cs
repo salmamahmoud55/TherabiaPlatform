@@ -23,7 +23,7 @@
         public string TransactionImage { get; set; }
         public bool IsApproved { get; set; }
         public double Price { get; set; }
-
+        public DateTime SessionDate { get; set; }
 
         public int UserId { get; set; }
         public User User { get; set; }
@@ -33,6 +33,9 @@
 
         public int? ProfessionalId { get; set; }
         public Professional Professional { get; set; }
+
+        public int? SessionId { get; set; }
+        public Session Session { get; set; }
 
     }
 }

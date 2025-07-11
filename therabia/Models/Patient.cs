@@ -30,6 +30,8 @@
 
         public List<Message> Messages { get; set; } = new();
 
+        public WalletRequest WalletRequest { get; set; }
+
 
 
     }
